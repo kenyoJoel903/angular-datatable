@@ -4,13 +4,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
+import { DataTablesModule } from 'angular-datatables';
+
+
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DataTablesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
